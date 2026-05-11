@@ -35,16 +35,28 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <Link
-          href="#contacto"
-          className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-all hover:scale-105"
-          style={{ background: "linear-gradient(135deg, #6366F1, #06B6D4)" }}
-        >
-          Auditoría Gratuita
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </Link>
+        <div className="hidden md:flex items-center gap-3">
+          <Link
+            href="/health-check"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium border transition-all hover:scale-105"
+            style={{
+              borderColor: "rgba(99, 102, 241, 0.35)",
+              color: "#A5B4FC",
+            }}
+          >
+            Probar herramienta gratis
+          </Link>
+          <Link
+            href="#contacto"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium text-white transition-all hover:scale-105"
+            style={{ background: "linear-gradient(135deg, #6366F1, #06B6D4)" }}
+          >
+            Auditoría Gratuita
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M3 7H11M11 7L7.5 3.5M11 7L7.5 10.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </Link>
+        </div>
       </div>
     </header>
   );

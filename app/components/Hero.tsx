@@ -61,6 +61,19 @@ export default function Hero() {
             </svg>
           </Link>
           <Link
+            href="/health-check"
+            className="flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-medium border transition-all hover:scale-105"
+            style={{
+              borderColor: "rgba(99, 102, 241, 0.35)",
+              color: "#A5B4FC",
+            }}
+          >
+            Probar herramienta gratis
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </Link>
+          <Link
             href="#proceso"
             className="flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-medium border transition-all hover:border-white/30 hover:text-white"
             style={{ borderColor: "rgba(255,255,255,0.1)", color: "#94A3B8" }}
