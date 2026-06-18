@@ -8,8 +8,8 @@ export const BENCHMARKS = {
     cpc: { average: 2.69 },
   },
   tiktok: {
-    ctr: { average: 0.9, good: 1.5 },
-    cpc: { average: 0.97 },
+    ctr: { average: 1.0, good: 2.0 },
+    cpc: { average: 0.80 },
   },
 } as const;
 
