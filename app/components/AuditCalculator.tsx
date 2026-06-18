@@ -211,7 +211,7 @@ export default function AuditCalculator() {
   const [resultsVisible, setResultsVisible] = useState(false);
   const [calcCount, setCalcCount] = useState(0);
   const [hasCalculated, setHasCalculated] = useState(false);
-  const debounceRef = useRef<ReturnType<typeof setTimeout>>();
+  const debounceRef = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   function togglePlatform(p: Platform) {
     setForm(prev => ({
